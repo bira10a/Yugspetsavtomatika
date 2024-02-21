@@ -1,0 +1,105 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: grid;
+    grid-template: 1fr / auto 1fr auto;
+    align-items: center;
+    justify-items: end;
+    z-index: 2;
+    padding: 30px 30px 0;
+    background-color: transparent;
+
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+.header-aside {
+    grid-column: 3 / 3;
+    grid-row: 2 / 3;
+    margin-top: 50px;
+
+    &__list {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__item {
+        position: relative;
+    }
+
+    &__btn {
+        padding: 15px;
+        order: 2;
+        border-radius: 15px;
+        outline: transparent;
+        transition: background-color 0.3s linear;
+
+        div {
+            width: 40px;
+            height: 40px;
+            mask: url('../images/sprite.svg#telephone') center / cover no-repeat;
+            background-color: $default; 
+            transition: all 0.4s linear;
+        }
+
+        &:focus {
+
+        }
+
+        &:hover {
+            div {
+                background-color: $accent;
+            }
+        }
+
+        &:active {
+            transform: scale(1.1);
+        }
+    }
+
+    &__btn--open {
+        background-color: #454e7b73;
+
+        div {
+            background-color: $accent;
+        }
+
+    }
+
+    &__btn--open ~ .header-aside__link {
+        opacity: 1;
+        visibility: visible;
+        right: 80px;
+        color: $accent;
+    }
+    
+    &__link {
+        position: absolute;
+        top: 25px;
+        right: 0px;
+        width: max-content;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.4s linear;
+        outline: transparent;
+
+        &:focus {
+
+        }
+
+        &:hover {
+
+        }
+
+        &:active {
+            
+        }
+    }
+}

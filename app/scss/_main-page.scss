@@ -1,0 +1,13 @@
+.main-page {
+    width: 100dwh;
+    @extend %bg-img;
+
+    &::before {
+        @include pseudo;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgb(27 24 39 / 50%);
+    }
+}

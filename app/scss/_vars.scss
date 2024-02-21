@@ -1,5 +1,5 @@
 $default: #ffffff;
-$accent: #00eeff;
+$accent: #75beff;
 $mainBgColor: #1f242d;
 $secondBgColor: #323945;
 
@@ -32,6 +32,9 @@ $secondBgColor: #323945;
   display: $display;
   position: $pos;
 }
+
+
+// ИСПОЛЬЗОВАНИЕ @include pseudo
  
 %checkbox-hidden {
   width: 1px;
@@ -46,3 +49,5 @@ $secondBgColor: #323945;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+// ИСПОЛЬЗОВАНИЕ @extend %bg-img;

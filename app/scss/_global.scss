@@ -124,3 +124,20 @@ body {
 .section {
   height: 100dvh;
 }
+
+
+[class*="__link"] {
+  padding: 10px;
+  border-bottom: 1px solid transparent;
+  border-radius: 30px;
+  transition: border-color 0.3s linear, color 0.3s linear;
+  outline: transparent;
+
+  &:focus {
+    border-color: $accent;
+  }
+
+  &:hover {
+    color: $accent;
+  }
+}

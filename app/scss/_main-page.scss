@@ -10,4 +10,18 @@
         width: 100%;
         background-color: rgb(27 24 39 / 50%);
     }
+
+    &__container {
+      height: 100dvh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+    }
+    
+    &__title {
+      text-transform: uppercase;
+      text-wrap: balance;
+      @include adaptiveValue("font-size", 26, 18);
+    }
 }

@@ -1,22 +1,59 @@
 .aboutUs {
-  background-color: red;
+  @extend %bg-img;
+  background-attachment: fixed;
+  position: relative;
+
+  &::before {
+    @include pseudo;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(27 24 39 / 50%);
+  }
 
   &__container {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     flex-wrap: wrap;
-    gap: rem(20);
-  }
-
-  &__title {
-    flex-basis: 100%;
-    text-align: center;
+    @include adaptiveValue("gap", 30, 15);
+    position: relative;
   }
 
   &__equipment {
-    flex: 1 1;
+    display: grid;
+    grid-template: auto / repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 80%;
   }
 
+  &__equipment-list {
+    position: relative;
+    font-family: 'Oswald-reg', sans-serif;
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+    &:hover {
+      svg {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  &__equipment-icon {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s linear;
+  }
+  
   &__text {
-    flex: 3 1;
+    text-wrap: balance;
+    text-align: center;
+    line-height: 1.6;
+    letter-spacing: 0.1rem;
   }
 }

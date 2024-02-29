@@ -20,7 +20,7 @@
       <svg>
         <use xlink:href="images/sprite.svg#logo">
         </use>
-    </svg>
+      </svg>
     </a>
 
     <ul class="header__list">
@@ -68,49 +68,80 @@
   <main class="main">
     <div class="wrapper">
       <div class="inner">
-        <section class="main-page section" style="background-image: url('./images/bgDesktop.jpg');">
+        <section class="main-page section">
+          <div class="main-page__background">
+            <video class="main-page__background-video" autoplay muted playsinline loop src="https://www.uralem.ru/wp-content/uploads/2021/03/UEM_video-2.webm"></video>
+          </div>
           <div class="main-page__container">
-            <h1 class="main-page__title"> Строительство объектов энергетического и нефтегазового комплекса</h1>
+            <h1 class="main-page__title">
+              <div>ООО «Югспецавтоматика»</div>
+              Строительство, техперевооружение, реконструкция, пусконаладка объектов энергетического и нефтегазового комплекса</h1>
           </div>
         </section>
 
-        <section class="aboutUs section">
+        <section class="aboutUs section" style="background-image: url('./images/aboutUs/bgDesktop.jpg');">
           <div class="aboutUs__container">
-            <h2 class="aboutUs__title">
-              О компании
-            </h2>
-            <ul class="aboutUs__equipment">
-              <li class="aboutUs__equipment-list">
-                <div class="aboutUs__equipment-title">
-                  20 +
-                </div>
-                <div class="aboutUs__equipment-text">
-                  единиц техники
-                </div>
-              </li>
-              <li class="aboutUs__equipment-list">
-                <div class="aboutUs__equipment-title">
-                  180 +
-                </div>
-                <div class="aboutUs__equipment-text">
-                  опытный кадровый состав
-                </div>
-              </li>
-              </li>
-              <li class="aboutUs__equipment-list">
-                <div class="aboutUs__equipment-title">
-                  15 +
-                </div>
-                <div class="aboutUs__equipment-text">
-                  реализовано крупных проектов
-                </div>
-              </li>
-            </ul>
+            <h2 class="aboutUs__title title">О предприятии</h2>
+
             <div class="aboutUs__text">
               ООО «Югспецавтоматика» - специализированная монтажная организация, выполняющая строительно-монтажные, электромонтажные,
               пусконаладочные работы, работы по монтажу технологических трубопроводов на объектах нефтегазового комплекса на всей
               территории Российской Федерации.
             </div>
+            
+            <ul class="aboutUs__equipment">
+              <li class="aboutUs__equipment-list">
+                <svg class="aboutUs__equipment-icon">
+                  <use xlink:href="images/sprite.svg#bulldozer">
+                  </use>
+                </svg>
+                <div class="aboutUs__equipment-text">
+                  Обширный и пополняемый парк собственной техники (более 20 единиц техники)
+                </div>
+              </li>
+
+              <li class="aboutUs__equipment-list">
+                <svg class="aboutUs__equipment-icon">
+                  <use xlink:href="images/sprite.svg#engineer">
+                  </use>
+                </svg>
+                <div class="aboutUs__equipment-text">
+                  Более 180 квалифицированных сотрудников
+                </div>
+              </li>
+              </li>
+
+              <li class="aboutUs__equipment-list">
+                <svg class="aboutUs__equipment-icon">
+                  <use xlink:href="images/sprite.svg#bulldozer">
+                  </use>
+                </svg>
+                <div class="aboutUs__equipment-text">
+                  Реализовано более 15 крупных проектов
+                </div>
+              </li>
+
+              <!-- <li class="aboutUs__equipment-list">
+                <svg class="aboutUs__equipment-icon">
+                  <use xlink:href="images/sprite.svg#bulldozer">
+                  </use>
+                </svg>
+                <div class="aboutUs__equipment-text">
+                  Cовременные технологии строительно-монтажных работ
+                </div>
+              </li>
+
+              <li class="aboutUs__equipment-list">
+                <svg class="aboutUs__equipment-icon">
+                  <use xlink:href="images/sprite.svg#bulldozer">
+                  </use>
+                </svg>
+                <div class="aboutUs__equipment-text">
+                  География работ на всей территории Российской Федерации
+                </div>
+              </li> -->
+              
+            </ul>
           </div>
         </section>
       </div>

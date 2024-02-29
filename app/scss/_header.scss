@@ -12,6 +12,13 @@
     background-color: transparent;
     transition: all 0.4s linear;
 
+    &__link {
+      svg {
+        width: 150px;
+        height: 100px;
+      }
+    }
+
     &__list {
       grid-column: 3; 
       display: flex;

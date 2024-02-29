@@ -12,7 +12,7 @@ $maxWidth: 1920;
 $maxWidthContainer: 1600;
 // Общий отступ у контейнера
 // (30 = по 15px слева и справа, 0 = нет отступа)
-$containerPadding: 200;
+$containerPadding: 40;
 
 // Ширина срабатывания первого брейкпоинта
 $containerWidth: $maxWidthContainer + $containerPadding;
@@ -88,9 +88,8 @@ $responsiveType: 1;
 }
 
 body {
-  font-family: 'Comfortaa', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
+  font-family: 'Philosopher', sans-serif;
+  @include adaptiveValue("font-size", 20, 16);
   line-height: 1.4;
   color: $default;
   background-color: $mainBgColor;
@@ -123,6 +122,7 @@ body {
 
 .section {
   height: 100dvh;
+  padding: 60px 0;
 }
 
 
@@ -139,5 +139,20 @@ body {
 
   &:hover {
     color: $accent;
+  }
+}
+
+.title {
+  position: relative;
+  font-family: 'Oswald-bold', sans-serif;
+  @include adaptiveValue("font-size", 32, 16);
+
+  &::before {
+    @include pseudo;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $accent;
   }
 }

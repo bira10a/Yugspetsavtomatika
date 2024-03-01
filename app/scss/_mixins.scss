@@ -122,7 +122,7 @@ $burgerColor: $default;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: 100%;
+    width: 50%;
     height: $burgerLineHeight; //указываем расстояние между линиями
     background-color: currentColor;
     transition: transform 0.3s ease-in-out;

@@ -14,24 +14,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const test = () => {
       const header = document.querySelector('.header');
   
-    //   document.addEventListener('scroll', () => {
-    //     if (window.pageYOffset >= 200) {
-    //       header.classList.add('header--active');
-    //     } else {
-    //       header.classList.remove('header--active');
-    //     }   
-    //   })
-
-    window.addEventListener('scroll', () => {
-        if (document.documentElement.scrollTop > 100) {
-          console.log(document.documentElement.scrollTop);
-        } else {
+      window.addEventListener('scroll', () => {
+          if (document.documentElement.scrollTop > 100) {
             console.log(document.documentElement.scrollTop);
-        }
-      });
+          } else {
+              console.log(document.documentElement.scrollTop);
+          }
+        });
 
     };
-    test();
+    // test();
 
     const burgerMenu = () => {
       const burger = document.querySelector('.burger'),

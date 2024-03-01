@@ -33,11 +33,13 @@
         justify-content: center;
         background-color: $secondBgColor;
         z-index: 9;
-        transform: translateY(-2000px);
-        transition: transform 0.4s linear;
+        transform: translate(-2000px, -2000px);
+        opacity: 0;
+        transition: transform 0.4s ease-out, opacity 0.7s ease-in;
 
         .burger--active + & {
-          transform: translateY(0);
+          transform: translate(0, 0);
+          opacity: 1;
           gap: 50px;
         }
       }

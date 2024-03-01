@@ -107,9 +107,9 @@
 
 //======================================================================================================================================================== БУРГЕР
 // BURGER
-$burgerWidth: 24px;
-$burgerHeight: 17px;
-$burgerLineHeight: 3px;
+$burgerWidth: 30px;
+$burgerHeight: 20px;
+$burgerLineHeight: 2px;
 $burgerColor: $default;
 @mixin burger {
   width: $burgerWidth; //указываем ширину линий

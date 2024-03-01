@@ -1,7 +1,10 @@
 .aboutUs {
-  @extend %bg-img;
-  background-attachment: fixed;
-  position: relative;
+  @include adaptiveValue("padding-top", 80, 40);
+  @include adaptiveValue("padding-bottom", 80, 40);
+  // @extend %bg-img;
+  // background-attachment: fixed;
+  // position: relative;
+  // style="background-image: url('./images/aboutUs/bgDesktop.jpg');"
 
   &::before {
     @include pseudo;
@@ -55,5 +58,10 @@
     text-align: center;
     line-height: 1.6;
     letter-spacing: 0.1rem;
+
+    @include r(400) {
+      line-height: 1.2;
+      letter-spacing: 0;
+    }
   }
 }

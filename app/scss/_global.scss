@@ -125,8 +125,8 @@ body {
 }
 
 .section {
-  height: 100dvh;
-  padding: 60px 0;
+  @include adaptiveValue("padding-top", 80, 40);
+  @include adaptiveValue("padding-bottom", 80, 40);
 }
 
 

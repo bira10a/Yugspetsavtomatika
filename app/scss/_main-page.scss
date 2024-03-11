@@ -1,5 +1,6 @@
 .main-page {
     position: relative;
+    height: 100dvh;
 
     &::before {
         @include pseudo;

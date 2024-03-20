@@ -11,6 +11,12 @@
     background-color: transparent;
     transition: all 0.4s linear;
 
+    &__logo {
+      transition: transform 0.5s linear, opacity 0.8s linear;
+      opacity: 0;
+      transform: translateY(-40px);
+    }
+
     &__link {
       svg {
         width: 150px;
@@ -43,6 +49,12 @@
           gap: 50px;
         }
       }
+
+      li {
+        transition: transform 0.5s linear, opacity 0.8s linear;
+        opacity: 0;
+        transform: translateY(-40px);
+      }
     }
 }
 
@@ -64,6 +76,9 @@
 
     &__item {
       position: relative;
+      transition: transform 0.5s linear, opacity 0.8s linear;
+      opacity: 0;
+      transform: translateX(50px);
     }
 
     &__btn {
@@ -73,17 +88,18 @@
         outline: transparent;
         transition: background-color 0.3s linear, box-shadow 0.4s linear;
 
-        div {
-            width: 40px;
-            height: 40px;
-            background-color: $default; 
-            transition: all 0.4s linear;
+        span {
+          display: inline-block;
+          width: 40px;
+          height: 40px;
+          background-color: $default; 
+          transition: all 0.4s linear;
         }
 
         @include r(768) {
           padding: 10px;
 
-          div {
+          span {
             width: 30px;
             height: 30px;
           }

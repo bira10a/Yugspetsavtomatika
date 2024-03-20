@@ -8,7 +8,7 @@
         left: 0;
         height: 100%;
         width: 100%;
-        background-color: rgb(27 24 39 / 50%);
+        background-color: rgba(27, 24, 39, 0.717);
     }
 
     &__background {
@@ -41,11 +41,27 @@
       max-width: 1000px;
       width: 100%;
 
-      div {
+      span {
+        display: block;
         font-family: 'Oswald-bold', sans-serif;
         text-transform: uppercase;
         @include adaptiveValue("font-size", 45, 20);
         @include adaptiveValue("margin-bottom", 25, 10);
+        animation: titleColor 4s ease-in-out infinite;
       }
     }
+}
+
+@keyframes titleColor {
+  from {
+    color: $default;
+  }
+
+  50% {
+    color: $accent;
+  }
+
+  to {
+    color: $default;
+  }
 }

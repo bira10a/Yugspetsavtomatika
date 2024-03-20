@@ -4,19 +4,24 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
+  <meta name="keywords" content="Нoвоpoccийcк, Строительство, Строительно-монтажные работы, электромонтажные работы, работы по монтажу технологических трубопроводов, объекты энергетического и нефтегазового комплекса, пусконаладочные работы, автоматика, транснефть, газпром, Краснодар">
+  <meta name="description" content="Строительно-монтажные, электромонтажные, пусконаладочные работы, работы по монтажу технологических трубопроводов на объектах энергетического и нефтегазового комплекса на всей территории Российской Федерации">
+  <title>ООО «Югспецавтоматика» - Производство общестроительных и специальных работ по строительству</title>
 
-  <!-- <script src="libs/gsap/gsap.min.js" defer></script>
+  <script src="libs/gsap/gsap.min.js" defer></script>
   <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
-  <script src="libs/gsap/ScrollSmoother.min.js" defer></script> -->
+  <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
   <script src="js/main.min.js" defer></script>
 
-  <link rel="icon" href="images/favicon.png" sizes="16x16, 32x32, 48x48" type="image/x-icon">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="images/favicon/favicon-48.png">
+  <link rel="icon" type="image/png" sizes="120x120" href="images/favicon/favicon-120.png">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
   <header class="header">
-    <a class="header__link" href="/" aria-label="логотип компании">
+    <a class="header__logo header__link" href="/" aria-label="логотип компании">
       <svg>
         <use xlink:href="images/sprite.svg#logo">
         </use>
@@ -55,14 +60,14 @@
       <ul class="header-aside__list">
         <li class="header-aside__item">
           <button class="header-aside__btn" type="button" aria-label="показать телефон">
-            <div class="header-aside__tel"></div>
+            <span class="header-aside__tel"></span>
           </button>
           <a class="header-aside__link" href="tel:+79053916067">+7 (905) 391-60-67</a>
         </li>
 
         <li class="header-aside__item">
           <button class="header-aside__btn" type="button" aria-label="показать электронную почту">
-            <div class="header-aside__mail"></div>
+            <span class="header-aside__mail"></span>
           </button>
           <a class="header-aside__link" href="mailto:info@yugsa.ru">info@yugsa.ru</a>
         </li>
@@ -72,14 +77,14 @@
 
   <main class="main">
     <div class="wrapper">
-      <div class="inner">
+      <div class="content">
         <section class="main-page section">
           <div class="main-page__background">
             <video class="main-page__background-video" autoplay muted playsinline loop src="https://www.uralem.ru/wp-content/uploads/2021/03/UEM_video-2.webm"></video>
           </div>
           <div class="main-page__container">
-            <h1 class="main-page__title">
-              <div>ООО «Югспецавтоматика»</div>
+            <h1 class="main-page__title" data-speed="1.2" data-lag="0.2">
+              <span>ООО «Югспецавтоматика»</span>
               Строительство, техперевооружение, реконструкция, пусконаладка на объектах энергетического и нефтегазового комплекса</h1>
           </div>
         </section>
@@ -89,63 +94,34 @@
             <h2 class="aboutUs__title title">О предприятии</h2>
 
             <div class="aboutUs__text">
-              ООО «Югспецавтоматика» - специализированная монтажная организация, выполняющая строительно-монтажные, электромонтажные,
+              <span>ООО «Югспецавтоматика»</span> - специализированная монтажная организация, выполняющая строительно-монтажные, электромонтажные,
               пусконаладочные работы, работы по монтажу технологических трубопроводов на объектах энергетического и нефтегазового комплекса на всей
               территории Российской Федерации.
             </div>
-            
-            <ul class="aboutUs__equipment">
-              <li class="aboutUs__equipment-list">
-                <svg class="aboutUs__equipment-icon">
-                  <use xlink:href="images/sprite.svg#bulldozer">
-                  </use>
-                </svg>
-                <div class="aboutUs__equipment-text">
-                  Обширный и пополняемый парк собственной техники (более 20 единиц техники)
-                </div>
+          
+            <ul class="aboutUs__list">
+              <li class="aboutUs__item aboutUs__item--left" data-speed="1" data-lag="0">
+                <img class="aboutUs__item-img" src="./images/aboutUs/technic.webp" alt="строительная техника">
+                <div class="aboutUs__item-text">Обширный и пополняемый парк собственной техники (более 30 единиц техники)!</div>
+                <button class="aboutUs__item-btn" type="button">Подробнее</button>
               </li>
 
-              <li class="aboutUs__equipment-list">
-                <svg class="aboutUs__equipment-icon">
-                  <use xlink:href="images/sprite.svg#engineer">
-                  </use>
-                </svg>
-                <div class="aboutUs__equipment-text">
-                  Более 180 квалифицированных сотрудников
-                </div>
-              </li>
+              <li class="aboutUs__item aboutUs__item--right" data-speed="1" data-lag="0">
+                <img class="aboutUs__item-img" src="./images/aboutUs/staff.jpg" alt="персонал">
+                <div class="aboutUs__item-text">Более 200 квалифицированных сотрудников</div>
+                <button class="aboutUs__item-btn" type="button">Подробнее</button>
               </li>
 
-              <li class="aboutUs__equipment-list">
-                <svg class="aboutUs__equipment-icon">
-                  <use xlink:href="images/sprite.svg#bulldozer">
-                  </use>
-                </svg>
-                <div class="aboutUs__equipment-text">
-                  Реализовано более 15 крупных проектов
-                </div>
+              <li class="aboutUs__item aboutUs__item--left" data-speed="1" data-lag="0">
+                <img class="aboutUs__item-img" src="./images/aboutUs/projects.jpg" alt="реализованные проекты">
+                <div class="aboutUs__item-text">Реализовано более 15 крупных проектов</div>
+                <button class="aboutUs__item-btn" type="button">Подробнее</button>
               </li>
-
-              <!-- <li class="aboutUs__equipment-list">
-                <svg class="aboutUs__equipment-icon">
-                  <use xlink:href="images/sprite.svg#bulldozer">
-                  </use>
-                </svg>
-                <div class="aboutUs__equipment-text">
-                  Cовременные технологии строительно-монтажных работ
-                </div>
+              <li class="aboutUs__item aboutUs__item--right" data-speed="1" data-lag="0">
+                <img class="aboutUs__item-img" src="./images/aboutUs/licenses.jpg" alt="лицензии">
+                <div class="aboutUs__item-text">В наличии все необходимы лицензии и допуски, требуемые для выполнения работ</div>
+                <button class="aboutUs__item-btn" type="button">Подробнее</button>
               </li>
-
-              <li class="aboutUs__equipment-list">
-                <svg class="aboutUs__equipment-icon">
-                  <use xlink:href="images/sprite.svg#bulldozer">
-                  </use>
-                </svg>
-                <div class="aboutUs__equipment-text">
-                  География работ на всей территории Российской Федерации
-                </div>
-              </li> -->
-              
             </ul>
           </div>
         </section>
@@ -172,6 +148,18 @@
       </div>
     </div>
 
+    <div class="modal">
+      <div class="modal__wrapper">
+        <div class="modal__content">
+          <button class="modal__close" type="button">X</button>
+          <h2>Позже добавлю тут информацию</h2>
+
+          <div class="modal__img">
+            <img src="https://belon.club/uploads/posts/2023-04/thumbs/1681382916_belon-club-p-zubastaya-ulibka-instagram-8.jpg" alt="aziat">
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 
   <footer class="footer">

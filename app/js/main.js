@@ -104,6 +104,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
   gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
+  const tlLoader = gsap.timeline();
+
+  tlLoader
+  .set('.loader__item', {yPercent: -100})
+  .set('.loader__title', {opacity: 0})
+  .to('.loader__item', {
+    yPercent: 0,
+    duration: 0.5,
+    stagger: 0.25,
+  })
+  .to('.loader__item', {
+    yPercent: 100,
+    duration: 0.5,
+    stagger: 0.25,
+  })
+  .to('.loader__title', {
+    opacity: 1,
+    duration: 1,
+    scale: 1.2,
+  })
+  
+
   if (ScrollTrigger.isTouch !== 1) {
 
     ScrollSmoother.create({
@@ -168,6 +190,47 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       })
     })
+
+    gsap.fromTo('.partners__title', { opacity: 0, x: -300 }, {
+      opacity: 1, x: 0,
+      scrollTrigger: {
+        trigger: '.partners',
+        start: '-750',
+        end: '-100',
+        scrub: true
+      }
+    })
+    
+    gsap.fromTo('.partners__container', { opacity: 0, x: -300 }, {
+      opacity: 1, x: 0,
+      scrollTrigger: {
+        trigger: '.partners',
+        start: '-550',
+        end: '-200',
+        scrub: true
+      }
+    })
+
+    gsap.fromTo('.map__title', { opacity: 0, x: +300 }, {
+      opacity: 1, x: 0,
+      scrollTrigger: {
+        trigger: '.map',
+        start: '-550',
+        end: '-100',
+        scrub: true
+      }
+    })
+
+    gsap.fromTo('.map__google', { opacity: 0, x: +300 }, {
+      opacity: 1, x: 0,
+      scrollTrigger: {
+        trigger: '.map',
+        start: '-450',
+        end: '-100',
+        scrub: true
+      }
+    })
+
 
     // gsap.fromTo('.header', { opacity: 1 }, {
     //   opacity: 0,

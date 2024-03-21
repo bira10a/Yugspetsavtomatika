@@ -36,17 +36,12 @@
     <ul class="header__list">
       <li>
         <a class="header__link" href="#">
-          О нас
+          О компании
         </a>
       </li>
       <li>
         <a class="header__link" href="#">
-          Профиль
-        </a>
-      </li>
-      <li>
-        <a class="header__link" href="#">
-          Работа
+          Вакансии
         </a>
       </li>
       <li>
@@ -101,24 +96,24 @@
           
             <ul class="aboutUs__list">
               <li class="aboutUs__item aboutUs__item--left" data-speed="1" data-lag="0">
-                <img class="aboutUs__item-img" src="./images/aboutUs/technic.webp" alt="строительная техника">
+                <img class="aboutUs__item-img" src="./images/aboutUs/technic.webp" alt="строительная техника" loading="lazy">
                 <div class="aboutUs__item-text">Обширный и пополняемый парк собственной техники (более 30 единиц техники)!</div>
                 <button class="aboutUs__item-btn" type="button">Подробнее</button>
               </li>
 
               <li class="aboutUs__item aboutUs__item--right" data-speed="1" data-lag="0">
-                <img class="aboutUs__item-img" src="./images/aboutUs/staff.jpg" alt="персонал">
+                <img class="aboutUs__item-img" src="./images/aboutUs/staff.jpg" alt="персонал" loading="lazy">
                 <div class="aboutUs__item-text">Более 200 квалифицированных сотрудников</div>
                 <button class="aboutUs__item-btn" type="button">Подробнее</button>
               </li>
 
               <li class="aboutUs__item aboutUs__item--left" data-speed="1" data-lag="0">
-                <img class="aboutUs__item-img" src="./images/aboutUs/projects.jpg" alt="реализованные проекты">
+                <img class="aboutUs__item-img" src="./images/aboutUs/projects.jpg" alt="реализованные проекты" loading="lazy">
                 <div class="aboutUs__item-text">Реализовано более 15 крупных проектов</div>
                 <button class="aboutUs__item-btn" type="button">Подробнее</button>
               </li>
               <li class="aboutUs__item aboutUs__item--right" data-speed="1" data-lag="0">
-                <img class="aboutUs__item-img" src="./images/aboutUs/licenses.jpg" alt="лицензии">
+                <img class="aboutUs__item-img" src="./images/aboutUs/licenses.jpg" alt="лицензии" loading="lazy">
                 <div class="aboutUs__item-text">В наличии все необходимы лицензии и допуски, требуемые для выполнения работ</div>
                 <button class="aboutUs__item-btn" type="button">Подробнее</button>
               </li>
@@ -131,20 +126,41 @@
             <h2 class="partners__title title">Наши партнёры</h2>
             <ul class="partners__list">
               <li>
-                <img src="images/partners/nmtp.png" alt="Новороссийский морской торговый порт">
+                <img src="images/partners/nmtp.png" alt="Новороссийский морской торговый порт" loading="lazy" width="180" height="100">
               </li>
               <li>
-                <img src="images/partners/gazprominvest.png" alt="Газпром-инвест">
+                <img src="images/partners/gazprominvest.png" alt="Газпром-инвест" loading="lazy" width="180" height="135">
               </li>
               <li>
-                <img src="images/partners/tnt.png" alt="Транснефть-терминал">
+                <img src="images/partners/tnt.png" alt="Транснефть-терминал" loading="lazy" width="180" height="74">
               </li>
               <li>
-                <img src="images/partners/gazstroiprom.svg" alt="Газстройпром">
+                <img src="images/partners/gazstroiprom.svg" alt="Газстройпром" loading="lazy" width="180" height="33">
               </li>
             </ul>
           </div>
         </section>
+
+        <section class="map section">
+          <div class="map__container">
+            <div class="map__title title">Наш адрес</div>
+          </div>
+
+          <iframe class="map__google"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2820.1951610319375!2d38.97981667616257!3d45.02096357107019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f04fc7b6a4f077%3A0x5622e8d1a5a2aef8!2z0YPQuy4g0KHRg9Cy0L7RgNC-0LLQsCwgNDAsINCa0YDQsNGB0L3QvtC00LDRgCwg0JrRgNCw0YHQvdC-0LTQsNGA0YHQutC40Lkg0LrRgNCw0LksIDM1MDAzMw!5e0!3m2!1sru!2sru!4v1710963334070!5m2!1sru!2sru"
+            width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <footer class="footer">
+          <div class="footer__container">
+            <div class="footer__copy">
+              Copyright © 2024
+              <p>Общество с ограниченной ответственностью «Югспецавтоматика».</p>
+              Все права защищены.
+            </div>
+          </div>
+        </footer>
       </div>
     </div>
 
@@ -160,9 +176,13 @@
         </div>
       </div>
     </div>
-  </main>
 
-  <footer class="footer">
-  </footer>
+    <div class="loader">
+      <h2 class="loader__title">Общество с ограниченной ответственностью «Югспецавтоматика»</h2>
+      <div class="loader__item"></div>
+      <div class="loader__item"></div>
+      <div class="loader__item"></div>
+    </div>
+  </main>
 </body>
 </html>

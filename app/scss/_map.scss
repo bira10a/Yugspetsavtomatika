@@ -1,0 +1,11 @@
+.map {
+  &__title {
+    @include adaptiveValue("margin-bottom", 25, 10);
+  }
+
+  iframe {
+    @media (max-width:$tablet){
+      height: 300px;
+    }
+  }
+}

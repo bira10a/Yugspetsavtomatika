@@ -1,10 +1,15 @@
 .partners {
   background-color: $mainBgColor;
+  padding-bottom: 0;
+
+  &__title {
+    @include adaptiveValue("margin-bottom", 30, 15);
+  }
 
   &__list {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 30px;
   }
 }

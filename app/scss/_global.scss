@@ -219,9 +219,19 @@ body {
   width: 100dvw;
   height: 100dvh;
   inset: 0;
-  background-color: red;
+  background-color: $default;
   z-index: 100;
   display: flex;
+  text-align: center;
+
+  &__logo {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 150px;
+  }
 
   &__title {
     position: absolute;
@@ -234,7 +244,7 @@ body {
 
   &__item {
     flex: 1 1 auto;
-    background: blanchedalmond;
+    background: $accent;
     border-right: 1px solid black;
     z-index: 102;
 
